@@ -6,10 +6,12 @@ using System.Web.Mvc;
 
 namespace DotNet_Framework.Controllers
 {
-    public class ServicesController : Controller
+    public class LoginController : Controller
     {
-        public ActionResult Services()
+
+        public ActionResult Login()
         {
+
             return View();
         }
     }
