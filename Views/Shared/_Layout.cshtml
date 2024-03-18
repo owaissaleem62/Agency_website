@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - A Software Agency Website</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -35,7 +35,7 @@
     <header id="header" class="fixed-top"  style="background-color: #37517E">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="index.html">SoftAge</a></h1>
+            <h1 class="logo me-auto">@Html.ActionLink("SOFTAGE", "Index", "Home", new { area = "" }, new { @class = "" })</h1>
            
             <nav id="navbar" class="navbar">
                 <ul>
@@ -55,10 +55,12 @@
         </div>
     </header><!-- End Header -->
 
-
-    <div class="">
-        @RenderBody()
-        <hr />
+    <body>
+        <div class="">
+            @RenderBody()
+            <hr />
+        </div>
+    </body>
      
         <!-- ======= Footer ======= -->
         <footer id="footer">
