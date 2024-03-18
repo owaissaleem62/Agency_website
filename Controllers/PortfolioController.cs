@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace DotNet_Framework.Controllers
 {
-    public class HomeController : Controller
+    public class PortfolioController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Portfolio()
         {
             return View();
         }

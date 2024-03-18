@@ -6,10 +6,12 @@ using System.Web.Mvc;
 
 namespace DotNet_Framework.Controllers
 {
-    public class HomeController : Controller
+    public class AppointmentController : Controller
     {
-        public ActionResult Index()
+
+        public ActionResult Appointment()
         {
+
             return View();
         }
     }
